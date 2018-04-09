@@ -24,7 +24,7 @@ opponent <- c("GB","SF","TN","ID")
 
 # Assign your dataframe rownames of their opponents
 games <- cbind(Row.names = opponent, games)
-
+#rownames(games) <- opponent
 # View your data frame to see how it has changed!
 
 games

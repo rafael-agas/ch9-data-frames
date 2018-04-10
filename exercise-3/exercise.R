@@ -33,7 +33,7 @@ care_1940 <- US["Personal Care", "X1940"]
 Food <- US["Food and Tobacco", "X1960"]
 
 # What was the highest expenditure category in 1960?
-max_spend <- max(US$X1960)
+max_spend <- US$category[US$X1960 == max(US$X1960)]
 
 # Define a function `lowest_category` that takes in a year as a parameter, and
 # returns the lowest spending category of that year
